@@ -1,0 +1,265 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Fonts */
+@font-face {
+    font-family: "Baloo Bhaijaan 2";
+    src: url('/assets/BalooBhaijaan2-VariableFont_wght');
+}
+
+/* Global Defaults and Variables */
+
+* {
+    font-family: "Baloo Bhaijaan 2";
+}
+
+:root {
+    --green: #03C988;
+    --blue: #00337C;
+    --dark-blue: #13005A;
+    --navy-blue: #001F4B;
+    --off-white: #F2F2F2;
+    --gray: #C2C2C2;
+    --light-gray: #E9E9E9;
+}
+
+/* Header */
+
+header {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    min-height: 85px;
+    margin: 0px;
+    box-sizing: border-box;
+    padding-left: clamp(5px, 12vw, 5vw);
+    background-color: #F2F2F2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    padding: 0px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    padding-right: 30px;
+    margin: 0px; 
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.head a:link {
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: black;
+}
+
+.hamburger-menu{
+    position: absolute;
+    top: 2rem;
+    right: 5vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.closed-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 5vw;
+    width: 30px;
+    height: 21px;
+    display: none;
+  }
+  
+  
+  .closed-menu span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #closed1 {
+    background-color: var(--green);
+    rotate: 45deg;
+  }
+  
+  #closed2 {
+    background-color: var(--green);
+    top: 0;
+    left: 0;
+    rotate: -45deg;
+  }
+
+@media (max-width: 1120px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-menu.active {
+        display: none;
+    }
+
+    .closed-menu.active {
+        display: flex;
+    }
+
+    #header.active {
+        display: inline-block;
+        background-color: var(--navy-blue);
+        position: fixed;
+        height: 100%;
+        z-index: 9999;
+        left:0;
+        right:0;
+        top:0;
+        padding: 0;
+    }
+
+    .logo.active {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;  
+    } 
+
+
+    .nav-links.active {
+        text-align: right;
+        display: block;
+        padding: 0px;
+        margin-top: 5rem;
+    }
+
+
+    .head a:link{
+        padding-right: 5vw;
+        margin: 0;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Footer */
+
+footer{
+    font-family: "Baloo Bhaijaan 2";
+    font-weight: 800;
+    display: inline-block;
+    align-items: center;
+    color: var(--green);
+    background-color: var(--blue);  
+    padding: 300px clamp(5px, 12vw, 5vw) 100px clamp(5px, 12vw, 5vw);
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.footer-nav {
+    text-align: right;
+}
+
+.contact-text {
+    padding: 0;
+    font-size: 2.5em;
+    margin: 40px 0px 0px 0px;
+}
+.contact-email {
+    padding: 0;
+    margin-top: 0;
+    font-weight: 100;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.footer-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    font-size: 2.5em;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.footer-rights{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+.artist a {
+    text-decoration: underline;
+}

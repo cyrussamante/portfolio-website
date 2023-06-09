@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cyruss Amante - cyrussamante.com</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= favicon_link_tag asset_path('favicon.png') %>
+  </head>
+  <header id = "header" class="<%= controller_name %>-<%= action_name %>">
+    <h2 class="logo"><%= link_to "cyruss.", root_path, :class => "logo-text" %></h2>
+    <div class="navbar">
+      <nav class="header-nav">
+        <ul class="nav-links">
+          <li class="head"><%= link_to "home", root_path %></li>
+          <li class="head"><%= link_to "about", "about" %></li>
+          <li class="head"><%= link_to "resume", "/resume.pdf" %></li>
+          <li class="head"><%= link_to "projects", "projects" %></li>
+        </ul>
+        <a href="" class="hamburger-menu">
+          <span class="hamburger-<%= action_name %>"></span>
+          <span class="hamburger-<%= action_name %>"></span>
+          <span class="hamburger-<%= action_name %>"></span>
+        </a>
+        <a href="" class="closed-menu">
+          <span id="closed1" class="closed-<%= action_name %>"></span>
+          <span id="closed2"class="closed-<%= action_name %>"></span>
+        </a>
+      </nav>
+    </div>
+    <div class="secondary-nav">
+    </div>
+  </header>
+
+  <body id="body">
+    <%= yield %>
+  </body>
+
+  <footer>
+    <div class="footer">
+      <h2 class="contact-text">contact me.</h2>
+      <p class="contact-email"><%= mail_to 'amantec@mcmaster.ca', "amantec@mcmaster.ca" %></p>
+      <nav class="footer-nav">
+        <ul class="footer-links">
+          <li><%= link_to "home", root_path %></li>
+          <li><%= link_to "about", "about" %></li>
+          <li><%= link_to "resume", "/resume.pdf" %></li>
+          <li><%= link_to "projects", "projects" %></li>
+        </ul>
+      </nav>
+
+      <nav class="socials">
+        <ul class="footer-links">
+          <li><%= link_to "linkedin", "https://www.linkedin.com/in/cyrussamante/" %></li>
+          <li><%= link_to "github", "https://www.github.com/cyrussamante/" %></li>
+          <li><%= link_to "twitter", "https://www.twitter.com/cyrussamante/" %></li>
+        </ul>
+      </nav>
+
+      <div class="footer-text">
+          <h2 class="footer-logo"><%= link_to "cyruss.", root_path %></h2>
+          <p class="footer-rights">&copy <span id="year"><%=Date.today.year%></span> cyruss amante. all rights reserved.</p>
+          <p class="footer-rights">design inspired by <span class="artist"><%= link_to "olaolu", "https://olaolu.dev/" %></span></p>
+      </div>
+
+    </div>
+  </footer>
+</html>

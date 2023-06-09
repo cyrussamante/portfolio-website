@@ -1,0 +1,55 @@
+.main-about .logo-text{
+    color: var(--green);
+}
+
+.main-about a{
+    color: var(--green);
+}
+
+.hamburger-menu .hamburger-about, .closed-menu .closed-about {
+    height: 3px;
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 10px;
+}
+
+@media (max-width: 1120px) {
+    .main-about a{
+        color: var(--off-white);
+    }
+}
+
+.about-hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color: var(--off-white);
+}
+
+.left-abt-hero {
+    padding: 0 0 0 100px;
+}
+
+.abt-hero-image {
+    margin: 0;
+    margin-left: 75px;
+    padding: 0;
+    height: 850px;
+    display: block;
+}
+
+.right-abt-hero {
+    margin: 0; 
+    padding-top: 300px;
+    padding-bottom: 300px;
+    padding-right: 100px;
+}
+.hero-text {
+    margin: 0;
+    font-size: 6em;
+    line-height: 0.8em;
+    color: var(--green);
+}
+

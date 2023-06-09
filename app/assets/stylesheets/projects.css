@@ -1,0 +1,105 @@
+.main-projects .logo-text{
+    color: var(--blue);
+}
+
+.main-projects a{
+    color: var(--blue);
+}
+
+.hamburger-menu .hamburger-projects, .closed-menu .closed-projects {
+    height: 3px;
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 10px;
+}
+
+@media (max-width: 1120px) {
+    .main-projects a{
+        color: var(--off-white);
+    }
+}
+
+
+.projects-hero {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: var(--off-white);
+    align-items: center;
+}
+
+.project-title {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin: 0;
+    line-height: 0;
+    color: var(--navy-blue);
+    text-align: center;
+    font-size: 3em;
+}
+
+.project-subtitle {
+    margin: 0;
+    padding: 0;
+    color: var(--navy-blue);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight:100;
+}
+
+.project-grid {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: center;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1200px;
+    /* grid-template-columns: 300px 300px 300px; */
+    /* grid-template-rows: auto; */
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+
+.project {
+    width: 300px;
+    height: 300px;
+    background-color: var(--light-gray);
+    cursor: pointer;
+    transform: scale(1.0);
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -ms-transition:  -ms-transform 0.2s;
+    transition:  transform 0.2s;
+    display: flex;
+    &:hover {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition: -webkit-transform 0.2s;
+        -moz-transition: -moz-transform 0.2s;
+        -ms-transition:  -ms-transform 0.2s;
+        transition:  transform 0.2s;
+      }
+}
+.project-desc {
+    align-self: flex-end;
+    background-color: var(--gray);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.proj-title, .proj-desc{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.proj-desc {
+    font-size: 0.9em;
+    color: black;
+}
