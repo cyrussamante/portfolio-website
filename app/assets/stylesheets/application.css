@@ -160,6 +160,10 @@ header a {
         display: none;  
     } 
 
+    #body.active {
+        position: fixed;
+    }
+
 
     .nav-links.active {
         text-align: right;
