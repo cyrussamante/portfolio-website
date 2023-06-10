@@ -48,16 +48,14 @@
 }
 
 .project-grid {
-    margin: 0 25% 0 25%;
+    margin: 0 auto 0 auto;
     padding-top: 30px;
     padding-bottom: 50px;
     justify-content: center;
-    width: 50%;
+    width: 75%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    max-width: 1200px;
-    /* grid-template-columns: 300px 300px 300px; */
-    /* grid-template-rows: auto; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1000px;
     grid-gap: 20px;
     justify-items: center;
 }
