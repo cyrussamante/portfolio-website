@@ -5,22 +5,25 @@
     border-radius: 10px;
 }
 
+
+
 .hero {
     background: linear-gradient(
-        to bottom,
+        to right,
         var(--blue) 0%,
-        var(--blue)50%,
-        var(--green) 50%,
+        var(--blue)70%,
+        var(--green) 70%,
         var(--green) 100%
       );
 }
 
 .hero-grid {
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-}
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    grid-auto-flow: dense;
 
+}
 
 .right-hero {
     justify-content: center;
@@ -28,9 +31,15 @@
 
 
 .main-home {
-   background-color: var(--blue);
-}
+    background: linear-gradient(
+        to right,
+        var(--blue) 0%,
+        var(--blue)70%,
+        var(--green) 70%,
+        var(--green) 100%
+      );
 
+}
 
 .main-home a{
     color: var(--light-gray);
@@ -54,13 +63,13 @@
 
 }
 
-
-
 .title {
     margin: 0;
-    font-size: 7vw;
+    font-size: 6vw;
     line-height: 0.8em;
     color: var(--green);
+    white-space: nowrap;
+
 }
 
 .cyruss-name {
@@ -71,17 +80,17 @@
 }
 
 p {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     color: var(--green);
     line-height: 1em;
     margin: 0;
 }
 
 .hero-image {
-    /* position: relative; */
-    height: 65%;
-    width: 65%;
-    padding-bottom: 60px;
+    height: auto;
+    width: 60%;
+    padding-top: 8%;
+    padding-left: 12%;
 
 }
 
@@ -90,7 +99,7 @@ p {
 }
 
 .left-hero {
-    padding: 100px 100px 0px 200px;
+    padding: 100px 0 0px 200px;
 }
 
 
@@ -185,37 +194,17 @@ p {
     background-color: var(--blue);
 }
 
+
 @media (min-width: 1120px) {
-    .main-home {
-        background: linear-gradient(
-            to right,
-            var(--blue) 0%,
-            var(--blue)70%,
-            var(--green) 70%,
-            var(--green) 100%
-          );
 
-    }
-
-    .hero-grid {
-        display: grid;
-        grid-template-columns: 54% 46%;
-        width: 100%;
-        grid-auto-flow: dense;
-    }
-
-    .hero {
-        background: linear-gradient(
-            to right,
-            var(--blue) 0%,
-            var(--blue)70%,
-            var(--green) 70%,
-            var(--green) 100%
-          );
-    }
 }
 
 @media (max-width:1120px) {
+
+    .main-home {
+        background: var(--blue);
+    }
+
     .left-hero {
         text-align: center;
         padding: 0;
@@ -223,8 +212,7 @@ p {
         align-content: center;
         width: 100%;
         display: block;
-        background-color: var(--blue);
-        
+        background-color: var(--blue);        
     }
 
     .hero {
@@ -242,30 +230,47 @@ p {
     }
 
     .title {
-        font-size: 10vh;
+        
+        font-size: 5em;
+        display: block;
     }
 
     .square-grid {
-        padding-bottom: 10%;
+        padding-bottom: 5%;
 
     }
 
     .cyruss-name {
-        font-size: 1.6em;
+        font-size: 1.8em;
         padding-top: 50px;
     }
 
     p {
         text-align: center;
-        font-size: 1.4em;
-        padding: 10px 25% 0 25%;
+        font-size: 1.5em;
+        padding: 20px 15% 0 15%;
     }
 
     .hero-image {
-        height: 70%;
-        width: 70%;
+        height: 80%;
+        width: 80%;
         padding: 10% 0 10% 0;
-        
-
     }
+
+    .hero {
+        background: linear-gradient(
+            to bottom,
+            var(--blue) 0%,
+            var(--blue) 50%,
+            var(--green) 50%,
+            var(--green) 100%
+          );
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+     
 }
