@@ -17,12 +17,11 @@
       );
 }
 
-.hero-grid {
+.hero-grid, .content-1-grid {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
     grid-auto-flow: dense;
-
 }
 
 .right-hero {
@@ -110,6 +109,7 @@ p {
     width: 100%;
     padding-top: 200px;
     padding-bottom: 250px;
+    position: relative;
 }
 
 .left-content-1 {
@@ -121,6 +121,43 @@ p {
     margin-top: 200px;
     display: inline-block;
     padding-right: 200px;
+    
+}
+
+.slime {
+    margin:0;
+    padding: 0;
+}
+
+.lines {
+    width: 25%;
+}
+
+#lines-1 {
+    position: absolute;
+    top: 250px;
+    right: 200px;
+}
+
+#lines-2 {
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    rotate: 180deg;
+}
+
+
+#slime-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    rotate: 180deg;
+}
+
+#slime-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .c1h {
@@ -129,6 +166,7 @@ p {
     text-align: left;
     line-height: 0;
     margin-bottom: 0.4em;
+
 }
 
 #rch1 {
@@ -195,9 +233,6 @@ p {
 }
 
 
-@media (min-width: 1120px) {
-
-}
 
 @media (max-width:1120px) {
 
@@ -229,8 +264,7 @@ p {
         background-color: var(--green);
     }
 
-    .title {
-        
+    .title {  
         font-size: 5em;
         display: block;
     }
@@ -254,6 +288,7 @@ p {
     .hero-image {
         height: 80%;
         width: 80%;
+        max-width: 600px;
         padding: 10% 0 10% 0;
     }
 
@@ -267,10 +302,60 @@ p {
           );
     }
 
-    .hero-grid {
+    .hero-grid, .content-1-grid {
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
     }
+
+    .slime {
+        width: 50vw;
+    }
+
+    .lines {
+        width: 50%;
+    }
+
+    #lines-1 {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        rotate: 180deg;
+
+        
+    }
+    
+    #lines-2 {
+        rotate: 360deg;
+        position: absolute;
+        bottom: 80px;
+    }
+
+    .c1h, .c1t {
+        text-align: center;
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+
+    #rct1, #lch1, #rch1, #lct1 {
+        text-align: center;
+        padding: 0;
+    }
+
+
+    .content-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .left-content-1, .right-content-1 {
+        padding: 0;
+        margin: auto 0 auto 0;
+    }
      
+    .left-content-1 {
+        padding-bottom: 100px;
+    }
 }

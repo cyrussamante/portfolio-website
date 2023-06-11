@@ -12,10 +12,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
             Morbi augue arcu, dapibus vel consequat ac, eleifend nec<br>eros. 
             In mattis sem id lectus maximus, id facilisis libero<br>aliquam.</p>
-            <%= image_tag("abstract/square-grid.png", :alt => "square-grid", :class => "square-grid") %>
+            <%= image_tag("abstract/square-grid.png", :alt => "square-grid", :class => "square-grid", :draggable => "false") %>
         </div>
         <div class="right-hero">
-            <%= image_tag("home/hero.png", :alt => "Cyruss Allen Amante", :class => "hero-image") %>
+            <%= image_tag("home/hero.png", :alt => "Cyruss Allen Amante", :class => "hero-image", :draggable => "false") %>
         </div>
     </div>
 </div>
@@ -23,25 +23,31 @@
 <!--Content 1 Section-->
 
 <div class = "content_1">
-    <div class="left-content-1">
-        <h2 class="c1h" id="lch1">title here.</h2>
-        <p class="c1t" id="lct1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Cras et elit eu odio blandit cursus vel ac purus. Fusce sit amet pretium purus. 
-        Vivamus dapibus vitae arcu quis posuere. Fusce posuere eget orci eu lacinia. 
-        Quisque consectetur pharetra ex nec lobortis. Integer id interdum ante. 
-        Etiam in nibh luctus, vestibulum orci in, eleifend nunc. 
-        Suspendisse feugiat, ante sed dignissim volutpat, felis sem finibus urna, a egestas lectus enim nec nisl. 
-        Proin tincidunt dolor quis mi lacinia, ac viverra nulla convallis.</p>
-    </div>
-    <div class="right-content-1">
-        <h2 class="c1h" id="rch1">title here.</h2>
-        <p class="c1t" id="rct1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Cras et elit eu odio blandit cursus vel ac purus. Fusce sit amet pretium purus. 
-        Vivamus dapibus vitae arcu quis posuere. Fusce posuere eget orci eu lacinia. 
-        Quisque consectetur pharetra ex nec lobortis. Integer id interdum ante. 
-        Etiam in nibh luctus, vestibulum orci in, eleifend nunc. 
-        Suspendisse feugiat, ante sed dignissim volutpat, felis sem finibus urna, a egestas lectus enim nec nisl. 
-        Proin tincidunt dolor quis mi lacinia, ac viverra nulla convallis.</p>
+    <%= image_tag("abstract/slime.png", :alt => "slime", :class => "slime", :id => "slime-1", :draggable => "false") %>
+    <%= image_tag("abstract/slime.png", :alt => "slime", :class => "slime", :id => "slime-2", :draggable => "false") %>
+    <%= image_tag("abstract/lines.png", :alt => "lines", :class => "lines", :id => "lines-1", :draggable => "false") %>
+    <%= image_tag("abstract/lines.png", :alt => "lines", :class => "lines", :id => "lines-2", :draggable => "false") %>
+    <div class="content-1-grid">
+        <div class="left-content-1">
+            <h2 class="c1h" id="lch1">title here.</h2>
+            <p class="c1t" id="lct1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras et elit eu odio blandit cursus vel ac purus. Fusce sit amet pretium purus. 
+            Vivamus dapibus vitae arcu quis posuere. Fusce posuere eget orci eu lacinia. 
+            Quisque consectetur pharetra ex nec lobortis. Integer id interdum ante. 
+            Etiam in nibh luctus, vestibulum orci in, eleifend nunc. 
+            Suspendisse feugiat, ante sed dignissim volutpat, felis sem finibus urna, a egestas lectus enim nec nisl. 
+            Proin tincidunt dolor quis mi lacinia, ac viverra nulla convallis.</p>
+        </div>
+        <div class="right-content-1">
+            <h2 class="c1h" id="rch1">title here.</h2>
+            <p class="c1t" id="rct1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Cras et elit eu odio blandit cursus vel ac purus. Fusce sit amet pretium purus. 
+            Vivamus dapibus vitae arcu quis posuere. Fusce posuere eget orci eu lacinia. 
+            Quisque consectetur pharetra ex nec lobortis. Integer id interdum ante. 
+            Etiam in nibh luctus, vestibulum orci in, eleifend nunc. 
+            Suspendisse feugiat, ante sed dignissim volutpat, felis sem finibus urna, a egestas lectus enim nec nisl. 
+            Proin tincidunt dolor quis mi lacinia, ac viverra nulla convallis.</p>
+        </div>
     </div>
 </div>
 
