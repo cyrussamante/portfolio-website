@@ -76,6 +76,10 @@
         padding-top: 10%;
     }
 
+    .text-area {
+        padding: 0 25% 0 25%;
+    }
+
     .right-abt-hero {
         justify-content: center;
         align-items: center;
