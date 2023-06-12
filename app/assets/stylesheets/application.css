@@ -259,6 +259,10 @@ footer{
     margin: 0px;
 }
 
+.contact-email {
+    text-align: left;
+}
+
 footer a{
     text-decoration: none;
     color: var(--green);
