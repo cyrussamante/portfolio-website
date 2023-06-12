@@ -202,9 +202,17 @@ p {
     padding-left: 45%;
 }
 
+.divider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .content_2 {
     background-color: var(--green);
     padding: 250px 0 250px 0;
+    position: relative;
 }
 
 
@@ -381,6 +389,11 @@ p {
         bottom: 350px;
         right: 50px;
         rotate: 180deg;
+    }
+
+    .divider {
+        rotate: 90deg;      
+        height: 400px;  
     }
 
 }
