@@ -246,11 +246,17 @@ p {
     margin:1em auto;
     padding: 0.2em 2.5em 0.2em 2.5em;
     display:block;
+    box-shadow: inset 0 0 0 0 var(--blue);
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+
 }
 
 .content-2-btn:hover {
     color: var(--green);
     background-color: var(--blue);
+    box-shadow: inset 400px 0 0 0 var(--blue);
 }
 
 .slime-bl {

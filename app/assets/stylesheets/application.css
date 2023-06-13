@@ -47,6 +47,9 @@ header {
     box-sizing: border-box;
     padding-left: clamp(5px, 12vw, 5vw);
     background-color: #F2F2F2;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
 }
 
 .navbar {
@@ -130,14 +133,23 @@ header a {
 @media (max-width: 1120px) {
     .hamburger-menu {
         display: flex;
+        -webkit-transition: ease-out 0.3s;
+        -moz-transition: ease-out 0.3s;
+        transition: ease-out 0.3s;
     }
 
     .hamburger-menu.active {
         display: none;
+        -webkit-transition: ease-in 0.3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     }
 
     .closed-menu.active {
         display: flex;
+        -webkit-transition: ease-in 0.3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     }
 
     #header.active {
@@ -150,18 +162,30 @@ header a {
         right:0;
         top:0;
         padding: 0;
+        -webkit-transition: ease-in .3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     }
 
     .logo.active {
         display: none;
+        -webkit-transition: ease-in .3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     }
 
     .nav-links {
-        display: none;  
+        display: none; 
+        -webkit-transition: ease-in .3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     } 
 
     #body.active {
         position: fixed;
+        -webkit-transition: ease-in .3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     }
 
 
@@ -170,6 +194,9 @@ header a {
         display: block;
         padding: 0px;
         margin-top: 5rem;
+        -webkit-transition: ease-in .3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     }
 
 
@@ -180,6 +207,9 @@ header a {
 
     .navbar.active {
         display: block;
+        -webkit-transition: ease-in .3s;
+        -moz-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
     }
 }
 
