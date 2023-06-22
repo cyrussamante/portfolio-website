@@ -26,6 +26,10 @@
     font-family: "Baloo Bhaijaan 2";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --green: #03C988;
     --blue: #00337C;

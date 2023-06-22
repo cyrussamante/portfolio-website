@@ -59,12 +59,11 @@
     justify-content: space-between;
     padding: 0;
     margin: 0;
-
 }
 
 .title {
     margin: 0;
-    font-size: 6vw;
+    font-size: 6em;
     line-height: 0.8em;
     color: var(--green);
     white-space: nowrap;
@@ -72,14 +71,14 @@
 }
 
 .cyruss-name {
-    font-size: 2.5vw;
+    font-size: 2.5em;
     font-weight: 100;
     color: var(--green);
     margin: 0;
 }
 
 p {
-    font-size: 1.3vw;
+    font-size: 1.3em;
     color: var(--green);
     line-height: 1em;
     margin: 0;
@@ -87,8 +86,8 @@ p {
 
 .hero-image {
     height: auto;
+    max-height: 570px;
     width: 60%;
-    padding-top: 8%;
     padding-left: 12%;
 
 }
@@ -131,6 +130,7 @@ p {
 
 .lines {
     width: 25%;
+    max-width: 500px;
 }
 
 #lines-1 {
@@ -274,6 +274,7 @@ p {
 
 .slime-br, .slime-bl {
     width: 20%;
+    max-width: 385px;
 }
 
 .circles {
@@ -287,6 +288,7 @@ p {
     top: 0;
     right: 0;
     width: 15%;
+    max-width: 300px;
 }
 
 .dotted-line {
