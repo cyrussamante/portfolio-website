@@ -20,7 +20,7 @@
 
 * {
     font-family: "Baloo Bhaijaan 2";
-    src: url('BalooBhaijaan2-VariableFont_wght.ttf');
+    src: asset_url('fonts/BalooBhaijaan2-VariableFont_wght.ttf');
 }
 
 html {
