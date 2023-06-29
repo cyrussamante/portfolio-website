@@ -15,8 +15,10 @@
  */
 
 /* Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+@font-face {
+    font-family: "Baloo Bhaijaan 2";
+    src: url('/assets/BalooBhaijaan2-VariableFont_wght');
+}
 
 /* Global Defaults and Variables */
 
