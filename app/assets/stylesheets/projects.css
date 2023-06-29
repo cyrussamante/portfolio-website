@@ -87,27 +87,27 @@
 }
 
 #proj1 {
-    background-image: url('/assets/website.svg');
+    background-image: url('website.svg');
 }
 
 #proj2 {
-    background-image: url('/assets/pirate.svg');
+    background-image: url('pirate.svg');
 }
 
 #proj3 {
-    background-image: url('/assets/calculator.svg');
+    background-image: url('calculator.svg');
 }
 
 #proj4 {
-    background-image: url('/assets/recycle.svg');
+    background-image: url('recycle.svg');
 }
 
 #proj5 {
-    background-image: url('/assets/robot.svg');
+    background-image: url('robot.svg');
 }
 
 #proj6 {
-    background-image: url('/assets/additional.svg');
+    background-image: url('additional.svg');
 }
 
 .project-desc {
