@@ -27,7 +27,11 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    background-color: var(--blue);
+}
+
+section {
+    scroll-snap-align: end;
 }
 
 :root {
@@ -133,6 +137,13 @@ header a {
     left: 0;
     rotate: -45deg;
   }
+
+@media (min-width: 1255px) {
+    html {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+} 
 
 @media (max-width: 1120px) {
     .hamburger-menu {

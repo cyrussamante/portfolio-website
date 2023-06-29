@@ -10,6 +10,7 @@
     <%= javascript_importmap_tags %>
     <%= favicon_link_tag asset_path('favicon.png') %>
   </head>
+  <section>
   <header id = "header" class="<%= controller_name %>-<%= action_name %>">
     <h2 class="logo"><%= link_to "cyruss.", root_path, :class => "logo-text" %></h2>
     <div class="navbar">
@@ -34,11 +35,13 @@
     <div class="secondary-nav">
     </div>
   </header>
+  </section>
 
   <body id="body">
     <%= yield %>
   </body>
 
+  <section>
   <footer>
     <div class="footer">
       <h2 class="contact-text">contact me.</h2>
@@ -68,4 +71,5 @@
 
     </div>
   </footer>
+  </section>
 </html>

@@ -39,7 +39,7 @@
 
 .right-abt-hero {
     margin: 0; 
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .hero-text {
     margin: 0;
@@ -49,7 +49,7 @@
 }
 
 .hero-subtext {
-    width: 70%;
+    width: 80%;
 }
 
 @media (max-width: 1120px) {

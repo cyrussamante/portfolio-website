@@ -29,7 +29,7 @@
 }
 
 .project-title {
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 30px;
     margin: 0;
     line-height: 0;
@@ -49,7 +49,7 @@
 
 .project-grid {
     margin: 0 auto 0 auto;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 50px;
     justify-content: center;
     width: 75%;
