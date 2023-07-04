@@ -9,6 +9,7 @@ Skills used in this project:
   * HTML
   * CSS
   * Javascript
+  * Version control (Git and GitHub)
   * Web app deployment
 
 You can see the site in action at https://www.cyrussamante.com/
