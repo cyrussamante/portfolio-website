@@ -6,8 +6,18 @@
     <h3 class="project-subtitle">selected projects that I have worked on</h3>
     <div class="project-grid">
         <!--Project 1 Grid-->
-        <%= link_to root_path do %>     
+        <%= link_to "https://github.com/cyrussamante/pathfinding-visualizer" do %>     
             <div class="project" id="proj1">
+                <div class="project-desc">
+                    <h4 class="proj-title">Pathfinding Visualizer</h4>
+                    <p class="proj-desc">an interactive visualizer for graph pathfinding algorithms.</p>
+                </div>
+            </div>
+        <% end %>
+
+        <!--Project 2 Grid-->
+        <%= link_to root_path do %>     
+            <div class="project" id="proj2">
                 <div class="project-desc">
                     <h4 class="proj-title">cyrussamante.com</h4>
                     <p class="proj-desc">the website you are currently on! click to go back to the homepage.</p>
@@ -15,9 +25,9 @@
             </div>
         <% end %>
 
-        <!--Project 2 Grid-->
+        <!--Project 3 Grid-->
         <%= link_to "https://docs.google.com/spreadsheets/d/1My97d9i4gzMeSncj6sokem-iDYgyY8X8VjroRvaCTWc/edit?usp=sharing" do %>
-            <div class="project" id="proj2">
+            <div class="project" id="proj3">
                 <div class="project-desc">
                     <h4 class="proj-title">piraten kapern simulator</h4>
                     <p class="proj-desc">randomized and strategic game simulator.</p>
@@ -25,9 +35,9 @@
             </div>
         <% end %>
 
-        <!--Project 3 Grid-->
+        <!--Project 4 Grid-->
         <%= link_to "https://github.com/cyrussamante/Grades2Date" do %>
-        <div class="project" id="proj3">
+        <div class="project" id="proj4">
             <div class="project-desc">
                 <h4 class="proj-title">grades2date</h4>
                 <p class="proj-desc">a weighted GPA calculator created using python.</p>
@@ -36,22 +46,12 @@
         <% end %>
 
 
-        <!--Project 4 Grid-->
+        <!--Project 5 Grid-->
         <%= link_to "/recyclinghopper.pdf" do %>
-            <div class="project" id="proj4">
+            <div class="project" id="proj5">
                 <div class="project-desc">
                     <h4 class="proj-title">recycling hopper mechanism</h4>
                     <p class="proj-desc">a mechanism using a rotary actuator to deposit recyclable containers.</p>
-                </div>
-            </div>
-        <% end %>
-
-        <!--Project 5 Grid-->
-        <%= link_to "/getagrip.pdf" do %>
-            <div class="project" id="proj5">
-                <div class="project-desc">
-                    <h4 class="proj-title">get a grip!</h4>
-                    <p class="proj-desc">a computer system for using remote sensing and actuation.</p>
                 </div>
             </div>
         <% end %>
